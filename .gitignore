@@ -1,0 +1,23 @@
+# Go
+/backend/bin/
+*.out
+
+# Node
+node_modules/
+/frontend/.next/
+/frontend/out/
+/frontend/next-env.d.ts
+/frontend/playwright-report/
+/frontend/test-results/
+*.tsbuildinfo
+
+# Env
+.env
+.env.local
+.vercel
+
+# OS
+.DS_Store
+
+# Superpowers scratch workspace
+.superpowers/
