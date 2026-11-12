@@ -10,17 +10,12 @@ Bốc thẻ từ trên xuống trong cột **Cần làm**; thẻ có `chờ:` th
 Cỡ: S ≤ 2 ngày · M 3–5 ngày · L > 1 tuần.
 
 Ghi chú: K-01 → K-05 được code trước khi repo chuyển sang quy trình 6 bước (12/11/2026), nên
-đã qua Review và QC (12/11/2026) và đang chờ PO nghiệm thu + OK của chủ dự án. Chưa có commit nào ngoài README.
+đã qua Review, QC và PO, chủ dự án OK ngày 12/11/2026. Ba commit ở nhánh `main`, chưa push (K-03/K-04/K-05 chung một commit vì file engine dùng chung).
 
 ## Đang làm
 
 | ID | Việc | Ưu tiên | Cỡ | Bước hiện tại | Nguồn |
 |---|---|---|---|---|---|
-| K-01 | Nền móng: Next.js 16, PWA offline (service worker viết tay), e2e Playwright, kiểm tra ngân sách 3 MB + script đo FPS | P0 | S | Chờ OK | Plan Task 1–4 |
-| K-02 | Tổ chức lại repo theo chuẩn trading-journal: `frontend/` + npm, features/, test cạnh code, CLAUDE.md, agents, skills, roadmap/kanban, Makefile, Vercel Services | P0 | S | Chờ OK | Yêu cầu chủ dự án 12/11 |
-| K-03 | Engine: đói, cho ăn, tất định, không sửa state đầu vào | P0 | S | Chờ OK | Plan Task 5 |
-| K-04 | Engine: nước — chu trình nitơ, clo, hút phân, thay nước (chờ 4 giờ), nhiệt độ, oxy, nhãn nước | P0 | M | Chờ OK | Plan Task 6 |
-| K-05 | Engine: sức khỏe, chết (chế độ Thực tế), lớn, cá đẻ con sinh sản, tua thời gian vắng mặt (tối đa 10 ngày) | P0 | M | Chờ OK | Plan Task 7 |
 
 ## Cần làm (giai đoạn 1)
 
@@ -53,7 +48,6 @@ Ghi chú: K-01 → K-05 được code trước khi repo chuyển sang quy trình
 | ID | Việc | Ghi chú |
 |---|---|---|
 | D1–D5 | Quyết định trong [lộ trình](2026-11-12-roadmap-giai-doan-0-7.md) | Đang chạy theo mặc định |
-| OK | Duyệt K-01 → K-05 | Review + QC đã xong; chờ PO |
 | Q1 | id catalog trộn slug tiếng Việt (`da-nui-xam`, `phong-khach`, `loc-thung`) với id loài tiếng Anh — quy tắc 9 coi id là định danh code | Giữ nguyên hay đổi toàn bộ sang tiếng Anh? |
 
 ## Xong
@@ -61,3 +55,8 @@ Ghi chú: K-01 → K-05 được code trước khi repo chuyển sang quy trình
 | ID | Việc | Ngày | Commit | Ghi chú |
 |---|---|---|---|---|
 | — | README + remote GitHub | 12/11/2026 | b1bba44 | Theo yêu cầu chủ dự án |
+| K-01 | Nền móng: Next.js 16, PWA offline, e2e, ngân sách 3 MB, script đo FPS | 12/11/2026 | 928a95b | Ngân sách đo trên trang tạm; đo lại ở K-21/K-17 |
+| K-02 | Tổ chức lại repo theo chuẩn trading-journal | 12/11/2026 | afed162 | Giữ Next.js theo chủ dự án |
+| K-03 | Engine: đói, cho ăn, tất định | 12/11/2026 | cb7c90a | Chung commit với K-04, K-05 |
+| K-04 | Engine: nước, chu trình nitơ, clo, nhiệt độ | 12/11/2026 | cb7c90a | Hằng số sát ngưỡng → K-20 |
+| K-05 | Engine: sức khỏe, chết, lớn, sinh sản, tua thời gian vắng mặt | 12/11/2026 | cb7c90a | Bỏ mặc 7 ngày chết hết → chờ chủ dự án |
